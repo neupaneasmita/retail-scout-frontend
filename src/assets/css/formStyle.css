@@ -1,0 +1,54 @@
+
+.label{
+    @apply block tracking-wide text-sm sm:text-base font-light md:font-normal text-white mb-1;
+}
+/*Input without prefix*/
+.input{
+    @apply rounded w-full;
+    padding: 12px;
+}
+/*Input-box : Input with prefix*/
+.input-box {
+    @apply w-full flex items-center bg-white rounded;
+    padding: 12px;
+}
+.input-box .prefix {
+    @apply text-text font-normal text-base;
+}
+.input-box input {
+    flex-grow: 1;
+    @apply border-0 outline-none pl-2;
+}
+
+/*Form Wrapper*/
+/*@media screen  and (min-width: 400px) and (max-width: 639px){*/
+/*    .form-wrapper{*/
+/*        min-width: 310px;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 640px) and (max-width: 767px){
+    .form-wrapper{
+        min-width: 355px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .form-wrapper{
+        min-width: 375px;
+    }
+}
+
+.dashboard-input-box {
+    @apply w-full flex items-center bg-transparent;
+    padding: 10px 0 15px;
+}
+.dashboard-input-box input {
+    flex-grow: 1;
+    @apply border-0 outline-none pl-2;
+}
+input[type="text"].dashboard-search-input-box::-webkit-input-placeholder {
+    font-family: 'Inter', sans-serif;
+    @apply text-secondary font-normal text-base leading-5;
+}
+.error{
+    border: 2px solid #DC2626;
+}

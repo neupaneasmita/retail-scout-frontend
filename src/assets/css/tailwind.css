@@ -1,0 +1,491 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-display: swap;
+  font-family: Sharp Sans;
+  src: url(../fonts/SharpSans-regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Sharp Sans;
+  src: url(../fonts/SharpSans-med.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Sharp Sans;
+  src: url(../fonts/SharpSans-semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Sharp Sans;
+  src: url(../fonts/SharpSans-Bold.otf);
+  font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  /*font-family: "Sharp Sans", sans-serif;*/
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*Global CSS*/
+/*.container{*/
+.container-wrapper {
+  @apply xl:px-0 lg:px-28 md:px-20 sm:px-10 px-4 mx-auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .container-wrapper {
+    max-width: 1040px;
+  }
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.primary-button,
+.secondary-button,
+.light-primary-button {
+  /*font-family: "Inter", sans-serif;*/
+  font-family: "Sharp Sans", sans-serif;
+  font-style: normal;
+}
+
+.heading-5,
+.link,
+.caption,
+.paragraph-body {
+  font-family: "Inter", sans-serif;
+  /*font-family: "Sharp Sans", sans-serif;*/
+  font-style: normal;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  /*font-family: "Sharp Sans", sans-serif;*/
+  /*font-family: "Inter", sans-serif;*/
+  font-style: normal;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+  /*font-weight: bold;*/
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-1 {
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .heading-2 {
+    font-size: 44px;
+    line-height: 60px;
+    /*line-height: 55px;*/
+  }
+
+  .heading-3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .heading-4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading-1 {
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: -2px;
+  }
+
+  .heading-2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .heading-3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .heading-4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.heading-5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.paragraph-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.testimonial-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.secondary-button {
+  @apply bg-secondary text-white px-6 py-3 text-center rounded-md font-semibold text-base leading-5 cursor-pointer transition-all duration-300 ease-in focus:outline-none;
+}
+
+.primary-button {
+  @apply bg-primary text-secondary px-6 py-3 text-center rounded-md font-semibold text-base leading-5 cursor-pointer transition-all duration-300 ease-in focus:outline-none;
+}
+.primary-button:hover {
+  background-color: #47cc92;
+}
+.secondary-button:hover {
+  background-color: #102930;
+}
+
+.light-primary-button {
+  color: #4ad594;
+  background-color: rgba(74, 213, 148, 0.16);
+  @apply px-6 py-3 text-center rounded-md font-medium text-base leading-5 cursor-pointer transition-all duration-300 ease-in focus:outline-none;
+}
+.light-primary-button:hover {
+  color: #48d091;
+  background-color: rgba(74, 213, 148, 0.3);
+}
+/* .primary-button:hover,
+.secondary-button:hover,
+.light-primary-button:hover {
+  @apply transform -translate-y-1;
+} */
+
+.discover {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: "Sharp Sans", sans-serif;
+  font-size: 0.8rem;
+  @apply opacity-70 font-medium tracking-widest;
+}
+
+/*================*/
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .landing-frontpage-description {
+    padding-left: 100px;
+  }
+}
+
+.landing-frontpage {
+  @apply xl:pl-0 lg:pl-28 md:pl-20 sm:pl-10 pl-4 mx-auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-frontpage {
+    max-width: 1240px;
+    margin: auto;
+    /*transform: translateX(100px);*/
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-frontpage {
+    max-width: 1240px;
+    margin: auto;
+    transform: translateX(100px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .landing-frontpage-wrapper {
+    height: 820px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1279px) {
+  .pricing-wrapper:nth-child(3) {
+    margin: auto;
+  }
+}
+
+/*================ Common Card ================*/
+@media screen and (min-width: 1280px) {
+  .common-card-image-wrapper {
+    max-width: 550px;
+    min-height: 500px;
+  }
+}
+
+/*======================*/
+.bloc-tabs {
+  display: inline-flex;
+  border-bottom: 1px solid #d8e5df;
+}
+
+.tabs {
+  @apply py-4 mr-6 text-base font-normal text-text items-center cursor-pointer relative;
+  /*font-family: "Inter", sans-serif;*/
+  font-family: "Sharp Sans", sans-serif;
+}
+
+.active-tabs {
+  @apply text-primary;
+  border-bottom: 3px solid #4ad594;
+}
+
+.content-tabs {
+  flex-grow: 1;
+}
+
+.content {
+  @apply w-full h-full overflow-y-auto px-6 py-8 hidden;
+}
+
+.active-content {
+  @apply block;
+}
+
+/*Pricing Section*/
+/*=======================*/
+@media screen and (max-width: 639px) {
+  .pricing-absolute-bg {
+    bottom: 90%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .pricing-absolute-bg {
+    bottom: 81%;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .pricing-absolute-bg {
+    bottom: 63%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aside-filter-section {
+    min-height: calc(100vh - 5rem);
+  }
+}
+/*Dashboard Shortlist Button*/
+/*Active Dashboard Link*/
+.text-primary.active-dashboard-link::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  background: #4ad594;
+  height: 2px;
+}
+
+[data-theme~="tooltip"] {
+  background-color: #0b1c28 !important;
+  color: #f8f9fa !important;
+  font-size: 0.75rem !important;
+}
+
+/*Dashboard Body*/
+@media screen and (min-width: 1024px) {
+  .dashboard-body {
+    height: calc(100vh - 72px);
+  }
+}
+.dashboard-innerpage-body {
+  height: calc(100vh - 72px);
+}
+
+.inside-page-main-wrapper {
+  max-height: calc(100vh - 170px);
+}
+@media screen and (min-width: 768px) {
+  .inside-page-main-wrapper {
+    max-height: calc(100vh - 140px);
+  }
+}
+
+.filter-input-number {
+  @apply w-20 flex-1 bg-transparent rounded px-3 py-1.5 outline-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
+.filter-input-number.success {
+  @apply border border-secondary border-opacity-20 focus:border-transparent;
+}
+.filter-input-number.error {
+  @apply border-2 border-red-400 focus:border-transparent;
+}
+
+/* Hide Arrow for Inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Scrollbar */
+/* width */
+.scrollbar::-webkit-scrollbar,
+.aside-filter::-webkit-scrollbar,
+tbody::-webkit-scrollbar,
+.tech-scroll::-webkit-scrollbar,
+.sidebar-filter-scroll::-webkit-scrollbar,
+.contact-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track,
+.aside-filter::-webkit-scrollbar-track,
+tbody::-webkit-scrollbar-track,
+.tech-scroll::-webkit-scrollbar-track,
+.sidebar-filter-scroll::-webkit-scrollbar-track,
+.contact-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb,
+.aside-filter::-webkit-scrollbar-thumb,
+tbody::-webkit-scrollbar-thumb,
+.tech-scroll::-webkit-scrollbar-thumb,
+.sidebar-filter-scroll::-webkit-scrollbar-thumb,
+.contact-scroll::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  /* border: 6px solid transparent; */
+  background-clip: content-box;
+  transition: all ease-in 0.3s;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover,
+.aside-filter::-webkit-scrollbar-thumb:hover,
+tbody::-webkit-scrollbar-thumb:hover,
+.tech-scroll::-webkit-scrollbar-thumb:hover,
+.sidebar-filter-scroll::-webkit-scrollbar-thumb:hover,
+.contact-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.input-style {
+  @apply rounded border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
+
+.SubmitButton {
+  display: block;
+  font-size: 16px;
+  width: calc(100% - 30px);
+  height: 40px;
+  margin: 40px 15px 0;
+  background-color: #f6a4eb;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #ffb9f6;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  will-change: transform, background-color, box-shadow;
+}
+
+.SubmitButton:active {
+  background-color: #d782d9;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #e298d8;
+  transform: scale(0.99);
+}
+
+.SubmitButton.SubmitButton--error {
+  transform: translateY(15px);
+}
+.SubmitButton.SubmitButton--error:active {
+  transform: scale(0.99) translateY(15px);
+}
+
+.SubmitButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #7795f8;
+  box-shadow: none;
+}
+
+/* Processing */
+.primary-button:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+.processing::after {
+  animation: dots steps(1, end) 1s infinite;
+  content: "";
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}

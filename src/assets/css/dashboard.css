@@ -1,0 +1,7 @@
+/*.active::before {*/
+/*    content: "";*/
+/*    width: 6%;*/
+/*    height: 4px;*/
+/*    @apply absolute bottom-0 bg-primary border-r-8;*/
+
+/*}*/

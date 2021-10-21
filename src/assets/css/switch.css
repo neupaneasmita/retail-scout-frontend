@@ -1,0 +1,29 @@
+.switch{
+    @apply relative inline-block my-0 mx-4;
+    width: 70px;
+    height: 34px;
+}
+.switch input {
+    @apply opacity-0 w-0 h-0;
+}
+.slider {
+    @apply absolute cursor-pointer inset-0 bg-text transition-all duration-300;
+}
+.slider::before{
+    content: "";
+    height: 26px;
+    width: 26px;
+    @apply absolute left-1 bottom-1 bg-white transition-all duration-300;
+}
+input:checked ~ .slider {
+    @apply bg-primary;
+}
+input:checked ~ .slider::before{
+    transform: translateX(36px);
+}
+.slider.rounded{
+    border-radius: 40px;
+}
+.slider.rounded::before{
+    @apply rounded-full;
+}
